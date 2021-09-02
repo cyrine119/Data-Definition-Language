@@ -2,7 +2,7 @@
 CREATE TABLE Product (
     Product_id VARCHAR2(20) CONSTRAINT pk_product PRIMARY KEY,
     Product_Name VARCHAR2(20) CONSTRAINT nn_product NOT NULL, 
-    Price NUMBER CONSTRAINT chk_Price CHECK (price>0)
+    Price NUMBER CONSTRAINT chk_price CHECK (price>0)
 );
 
 CREATE TABLE Customer (
